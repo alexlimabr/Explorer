@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62,5%;
+}
+:root {
+--background-page: rgb(0, 0, 0);
+--button-color: rgb(4, 201, 142);
+
+--button-color-hover: rgb(3, 182, 122);
+--shadow-button: rgb(1, 71, 48);
+--font-color: white;
+}
+body {
+  background-color: var(--background-page);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--font-color);
+}
+#container {
+  width: 80%;
+  max-width: 400px;
+  margin-inline: auto;
+  margin-block: 0.5rem;
+}
+h1 {
+  font: bold 2rem 'segoe ui';
+  color: aliceblue;
+  margin-top: 2rem;
+}
+p {
+  font: 1.2rem 'segoe ui';
+  color: rgb(165, 165, 165);
+  text-align: center;
+  margin-block: 1.5rem;
+}
+input, button{
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  color: gray;
+  border: none;
+}
+button {
+  background-color: var(--button-color);
+  font: bold 1.3rem;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--button-color-hover);
+  transition: 2.5ms;
+  box-shadow: 0 0.5em 0.5em var(--shadow-button);
+  border: none;
+}
+#resposta {
+  margin-top: 2rem;
+
+  transition: opacity 1s;
+}
+#resposta div {
+  font-size: 1rem;
+  font-weight: normal;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+
+
